@@ -42,7 +42,8 @@ function Search() {
       <div className="country-grid">
         {filteredCountries.map(country => (
           <div className="countryCard" key={country.cca3}>
-            <img src={country.flags[0]} alt={country.name.common} />
+            <img src={country.flags.png} alt={country.name.common}  width="50"
+              height="auto"/>
             <p>{country.name.common}</p>
           </div>
         ))}
